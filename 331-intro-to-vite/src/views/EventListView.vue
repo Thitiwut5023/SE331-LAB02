@@ -9,9 +9,9 @@ const events = ref<Event[]>(null)
 
 onMounted(() => {
   axios
-    .get('https://my-json-server.typicode.com/mzknkung53/652115008/events')
+    .get('https://my-json-server.typicode.com/Thitiwut5023/SE331-LAB02-DB/events')
     .then((response) => {
-      console.log(response.data)
+      events.value = response.data
     })
     .catch((error) => {
       console.error('There was an error!', error)
