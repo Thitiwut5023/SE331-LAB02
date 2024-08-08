@@ -25,7 +25,6 @@ const page = computed(() => props.page)
 const size = computed(() => props.size)
 onMounted(() => {
   watchEffect(() => {
-    events.value = null
     EventService.getEvents(size.value, page.value)
     .then((response) => {
       events.value = response.data
