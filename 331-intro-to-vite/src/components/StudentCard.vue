@@ -4,15 +4,7 @@ import Student from '@/types/Student'
 defineProps<{
   student: Student
 }>()
-// {
-//     "id": 1,
-//     "studentId": "SE-001",
-//     "name": "Prayuth",
-//     "surname": "The minister",
-//     "gpa": 3.59,
-//     "image": "https://firebasestorage.googleapis.com/v0/b/publicimage-41deb.appspot.com/o/tu.jpg?alt="penAmount": 15,
-//     "description": "The great man ever!!!!"
-// },
+
 </script>
 
 <template>
