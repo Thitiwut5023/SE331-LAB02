@@ -14,10 +14,10 @@ const { message } = storeToRefs(store)
         <h4>{{ message }}</h4>
       </div>
       <div class="wrapper">
-        <nav>
-          <RouterLink :to="{name: 'event-list-view', query: { page: 1, size: 2 }}">Event</RouterLink> |
-          <RouterLink :to="{name: 'student'}">Students</RouterLink> |
-          <RouterLink :to="{name: 'about'}">About</RouterLink>
+        <nav class="py-6">
+          <RouterLink class="font-bold text-gray-700" :to="{name: 'event-list-view', query: { page: 1, size: 2 }}">Event</RouterLink> |
+          <RouterLink class="font-bold text-gray-700" :to="{name: 'student'}">Students</RouterLink> |
+          <RouterLink class="font-bold text-gray-700" :to="{name: 'about'}">About</RouterLink>
         </nav>
       </div>
     </header>
