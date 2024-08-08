@@ -20,6 +20,6 @@ const register = () => {
 
 </script>
 <template>
-    <p>Register event here</p>
-    <button @click="register">Register Me!</button>
+    <p class="bg-gray-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Register event here</p>
+    <button @click="register" class="bg-gray-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Register</button>
 </template>

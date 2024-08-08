@@ -22,5 +22,5 @@ const edit = () => {
 </script>
 
 <template>
-    <button @click="edit">Edit</button>
+    <button @click="edit" class="bg-gray-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Edit</button>
 </template>

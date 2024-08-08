@@ -42,17 +42,23 @@ onMounted(() => {
   <h1>Event for good</h1>
   <div class="flex flex-col items-center">
     <EventCard v-for="event in events" :key="event.id" :event="event"></EventCard>
-  
-    <div class="pagination">
-      <RouterLink id="page-prev"
-      :to="{name: 'event-list-view', query: { page: page - 1, size: size } }"
-      rel="prev"
-      v-if="page != 1">Prev Page</RouterLink>
-
-      <RouterLink id="page-next"
-      :to="{name: 'event-list-view', query: {page: page + 1, size: size } }" 
-      rel="next"
-      v-if="hasNextPage">Next Page</RouterLink>
+    <div class="flex w-72">
+      <RouterLink
+        :to="{ name: 'event-list-view', query: { page: page - 1 } }"
+        rel="prev"
+        v-if="page != 1"
+        class="flex-1 text-left no-underline text-gray-800"
+      >
+        Prev Page
+      </RouterLink>
+      <RouterLink
+        :to="{ name: 'event-list-view', query: { page: page + 1 } }"
+        rel="next"
+        v-if="hasNextPage"
+        class="flex-1 text-right no-underline text-gray-800"
+      >
+        Next Page
+      </RouterLink>
     </div>
   </div>
 </template>
