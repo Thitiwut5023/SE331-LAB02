@@ -17,3 +17,6 @@ export interface Event {
     image: string
     description: string
   }
+  export interface MessageState {
+    message: string
+  }
