@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import EventCard from './components/EventCard.vue'
 import { useMessageStore } from './stores/message';
 import { storeToRefs } from 'pinia';
+import { inject } from "@vercel/analytics"
 const store = useMessageStore()
 const { message } = storeToRefs(store)
 </script>
